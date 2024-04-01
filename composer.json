@@ -74,7 +74,7 @@
     },
     "suggest": {
         "spiral/roadrunner-cli": "Provides RoadRunner installation and management CLI tools",
-        "ext-protobuf": "Provides Protocol Buffers support"
+        "ext-protobuf": "Provides Protocol Buffers support. Without it, performance will be lower."
     },
     "config": {
         "sort-packages": true
