@@ -198,7 +198,7 @@ class HttpWorker implements HttpWorkerInterface
                 $this->headerValueToArray($message->getAttributes()),
             ),
             query: $query,
-            body: $message->getParsed() && empty($body) ? '{}' : $body,
+            body: $message->getParsed() && $body === '' ? '{}' : $body,
             parsed: $message->getParsed(),
         );
     }
